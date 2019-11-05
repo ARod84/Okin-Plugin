@@ -1,0 +1,1558 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/*---Fonts---*/
+@font-face {
+    font-family: Lato;  
+    src: url('../fonts/Lato-Regular.ttf');  
+    font-weight: normal;  
+} 
+
+@font-face {
+	font-family: Open Sans Condensed Light;  
+	src: url('../fonts/OpenSansCondensed-Light.ttf');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Open Sans Light;  
+	src: url('../fonts/OpenSans-Light.ttf');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Open Sans Condensed Bold;  
+	src: url('../fonts/OpenSansCondensed-Bold.ttf');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Open Sans Regular;  
+	src: url('../fonts/OpenSans-Regular.ttf');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Open Sans Bold;  
+	src: url('../fonts/OpenSans-Bold.ttf');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Open Sans Semi Bold;  
+	src: url('../fonts/OpenSans-SemiBold.ttf');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: Open Sans Extra Bold;  
+	src: url('../fonts/OpenSans-ExtraBold.ttf');  
+	font-weight: normal;  
+}
+
+
+/*-------------------------------*
+ *--------ESTILOS GENERALES------*/
+
+p.landing-subtitle, li {
+    font-family: 'Open Sans', 'Arial' , sans-serif;
+}
+
+h1.landing-title {
+    font-size: 3.052em !important;
+}
+
+h2.landing-title {
+    font-size: 2.441em !important;
+}
+
+h3.landing-title {
+    font-size: 1.953em;
+}
+
+h4.landing-title {
+    font-size: 1.563em;
+}
+
+h5.landing-title {
+    font-size: 1.25em;
+}
+
+h6.landing-title {
+    font-size: 1em;
+}
+
+p.landing-subtitle {
+    font-size: .8em;
+}
+
+.landing {
+    width:100%;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+/*-------------------------------*
+ *-------- LANDING HEADER -------*/
+
+header {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.landing-header {
+    font-size: 1.2em;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px !important;
+    display: inline-block;
+}
+
+.landing-header-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.landing-header-nav img,
+.landing-header-nav ul,
+.landing-header-nav ul li {
+    display: inline;
+    vertical-align: middle;
+}
+
+.landing-header-logo img {
+    height: 3em;
+    width: auto;
+}
+
+.landing-header-display {
+    background-color: #FFFF00;
+    font-family: 'Open Sans Condensed Bold', Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px;
+    margin: 0;
+}
+
+.landing-header-link a {
+    font-family: 'Open Sans Light', 'Arial' , sans-serif;
+    font-weight: 100;
+    padding-left: 1.5em;
+    line-height: 2.8em;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.landing-header-link a,
+.landing-header-link a:hover,
+.landing-header-link a:active,
+.landing-header-link a:visited {
+    color: #444;
+    text-decoration: none;
+}
+
+.landing-header-link:after {
+    content: '/';
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 100;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+/*-----------------------------*
+ *----------SLIDE--------------*/
+
+.mySlides {display: none}
+
+.landing-slide-wrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-slide-wrapper ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-slide-wrapper ul li.landing-slide-overlay1 {
+    position: relative;
+    display: block;
+    min-height: 800px;
+
+    /*background: -moz-linear-gradient( to right, rgba(76,204,20, 0.25) 0%, rgba(0,0,0, 0.75) 100%), url('img/slider2.JPG');
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(76,204,20, 0.25)), color-stop(59%, rgba(76,204,20, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.75))), url('img/slider2.JPG') no-repeat;
+    background: -webkit-linear-gradient(to right, rgba(76,204,20, 0.25) 0%, rgba(0,0,0, 0.75) 100%), url('img/slider2.JPG');
+    background: -o-linear-gradient(to right, rgba(76,204,20, 0.25) 0%, rgba(0,0,0, 0.75) 100%), url('img/slider2.JPG');
+    background: -ms-linear-gradient(to right, rgba(76,204,20, 0.25) 0%, rgba(0,0,0, 0.75) 100%), url('img/slider2.JPG');
+    background: linear-gradient(to right, rgba(76,204,20, 0.25) 0%, rgba(0,0,0, 0.75) 100%), url('img/slider2.JPG');*/
+    background-position: right center;
+    background-size: 100% auto;
+}
+
+.landing-slide-wrapper ul li.landing-slide-overlay2 {
+    position: relative;
+    min-height: 800px;
+    background-position: right center;
+    background-size: 100% auto;
+}
+
+.landing-slide-caption {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: #fff;
+    max-width: 42%;
+}
+
+.landing-slide-caption h1 {
+    font-family: 'Open Sans Condensed Bold', Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: /*#4CCC14#E8D20*/ #FFCE0D;
+}
+
+.landing-slide-caption h3 {
+    font-family: 'Open Sans Condensed Light', Arial, sans-serif;
+    font-weight: 100;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.landing-slide-caption h6 {
+    font-weight: 500;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: 'Open Sans Regular', 'Arial', sans-serif;
+    color: #fff;
+}
+
+.landing-slide-caption p {
+    font-family: 'Open Sans Regular', 'Arial', sans-serif;
+    line-height: 1.1em;
+    padding: 1em 2em 1em 0;
+    color: #fff;
+    line-height: 1em;
+}
+
+.landing-slide-caption2 {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    color: #FFF;
+    padding-right: 10em;
+}
+
+.action-buttons {
+    margin-top: 2em;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}   
+
+.primary-btn a {
+    background-color: #FFCE0D;
+    color: #FFF;
+    padding: .8em 2em .8em 2em;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.primary-btn a:hover,
+.primary-btn a:active,
+.primary-btn a:visited {
+   color: #FFF;
+}
+
+.secondary-btn a {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    padding: .8em 2em .8em 2em;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.secondary-btn a:hover,
+.secondary-btn a:active,
+.secondary-btn a:visited {
+    color: #FFF;
+}
+
+.action-list {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    color: #fff;
+    max-width: 82%;
+}
+
+.action-list i {
+    background-color: rgba(255,255,255,0.2);
+    padding: .35em .6em .35em .6em;
+    border-radius: 50%;
+    border: 15px solid rgba(0,0,0,0.2);
+    color: #FFCE0D;
+    cursor: pointer;
+}
+
+.action-list i:hover,
+.action-list i:active {
+    border: 15px solid rgba(255,255,77,.5);
+    -webkit-text-stroke: 5px #FFFF4D;
+    color: #111;
+}
+
+
+.landing-slide-overlay2 i {
+    position: absolute;
+    color: #111;
+    top: 42%;
+    left: 2%;
+    cursor: pointer;
+    -webkit-text-stroke: 2px #FFCE0D;
+}
+
+.landing-slide-overlay2 i:hover,
+.landing-slide-overlay2 i:active {
+    -webkit-text-stroke: 5px #FFFF4D;
+}
+
+/* Fading animation slides */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*------------------------------------*
+ *---------LANDING OPTION-------------*/
+
+.landing-option {
+    display: flex;
+    flex-direction: row;
+    min-height: 30em; 
+    font-size: 1rem;
+    flex-grow: 1
+}
+
+.landing-option-first {
+    background: linear-gradient(to right, rgba(0,0,0, 0.35) 0%, rgba(0,0,0, 0.25) 100%), url('../img/slider2.JPG');
+    background-size: auto 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 50%;
+}
+
+.landing-option-second {
+    background: linear-gradient(to right, rgba(0,0,0, 0.25) 0%, rgba(0,0,0, 0.35) 100%), url('../img/atletaslanding.jpg');
+    background-size: auto 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 50%;
+}
+
+.option {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5em;
+}
+
+.option-sub {
+    color: #FFF;
+}
+
+h1.option-sub {
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+h6.option-sub {
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+h1.option-sub,
+h6.option-sub {
+    text-transform: uppercase;
+}
+
+p.option-sub {
+    margin-bottom: 5em;
+    font-family: 'Open Sans Regular', Arial, sans-serif !important;
+    font-size: .9em;
+}
+
+/*------------------------------------*
+ *---------LANDING DESCRIPTION--------*/
+
+h1.landing-title {
+    font-family: 'Open Sans Condensed Bold', Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color: #FFCE0D;
+}
+
+.landing-description {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fondoact.png');
+    background-size: cover;
+}
+
+.landing-description-text h6 {
+    font-family: 'Open Sans Condensed Light', Arial, sans-serif;
+    color: #FFF;
+} 
+
+.landing-description-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+.landing-description-text p {
+    color: rgba(86,89,104,1);
+}
+
+.landing-club-okin label {
+    font-family: 'Open Sans Regular', Arial, sans-serif;
+    font-size: .8em !important;
+    color: #fff;
+}
+
+.club-landing-btn {
+    font-family: 'Open Sans Bold', Arial, sans-serif;
+    text-transform: uppercase !important;
+}
+
+button.club-landing-btn {
+    background-color: #FFCE0D !important;
+    border: 1px solid #FFCE0D !important;
+    border-radius: 3px !important;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+}
+
+button.club-landing-btn:hover,
+button.club-landing-btn:active {
+    background: #222 !important;
+    color: #FFCE0D !important;
+    border: 1px solid #FFCE0D !important;
+}
+
+/*-----------------------------*
+ *---------LANDING CTA---------*/
+
+.landing-action {
+    margin: 4em 0 1em;
+    text-align: center;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.landing-form {
+    text-align: left;
+    padding: 2em 25em 2em 25em;
+}
+
+/*----------------------
+ *------- MODAL --------*/
+
+.modal-okin-coupon {
+    position: absolute; 
+    z-index: 1; 
+    left: 25%;
+    top: 50%;
+    width: 50%; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+/* Modal Content/Box */
+.modal-coupon-content {
+    background-color: #222;
+    margin: 15% auto; 
+    padding: 20px;
+    width: 60%; 
+    color: #fff;
+}
+
+.modal-coupon-inner {
+  border: 2px dotted #FFCE0D;
+  width: 100%;
+  padding: 10px;
+}
+
+h5.okin-coupon-title {
+  font-family: 'Open Sans Condensed Bold', Arial, sans-serif;
+  font-weight: 800;
+  color: #FFCE0D;
+  font-size: 1.2em;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+
+p.coupon {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #FFF;
+  font-size: 1em;
+  line-height: 1.1em;
+  text-align: center;
+  padding: 2em;
+  border-radius: 4px;
+  background-color: #444;
+}
+
+/* wpforms modal okin club */
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+.club-okin-button {
+  background: #ef408b !important;
+  color: #222 !important;
+  border: none !important;
+}
+
+button.wpforms-submit.club-okin-button {
+  font-family: 'Barlow', sans-serif !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  font-weight: 900 !important;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2); 
+}
+
+/* modal background animation */
+.modal-content {
+ animation: colorchange 5s ease-in alternate infinite; 
+ -webkit-animation: colorchange ease-in 5s alternate infinite;
+}
+
+/*------------------------------------*
+ *------------COUPON PAGE-------------*/
+
+.landing-option {
+    display: flex;
+    flex-direction: row;
+    min-height: 30em; 
+    font-size: 1rem;
+    flex-grow: 1
+}
+
+.landing-option-coupon {
+    background-size: auto 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 50%;
+}
+
+.option {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5em;
+}
+
+.option-sub {
+    color: #FFF;
+}
+
+h1.option-sub {
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+h6.option-sub {
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+h1.option-sub,
+h6.option-sub {
+    text-transform: uppercase;
+}
+
+p.option-sub {
+    margin-bottom: 5em;
+}
+
+/*--------------------------------*
+ *----- ATLETAS ARCHIVE PAGE------*/
+
+.okin-atletas-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.atleta {
+    padding:.5em;
+    position: relative;
+}
+
+.atleta-img a img {
+    width: auto;
+    height: 20em;
+}
+
+.atleta-title {
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #FFCE0D;
+}
+
+.atleta-lema {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 100;
+    color: #FFF;
+    padding: .5em 0 .5em .6em;
+    margin: .4em;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background-color: rgba( 0, 0, 0, 0.4);
+    width: 96.5%;
+}
+
+
+/*-------------------------
+	ANIMATIONS
+  -------------------------*/
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);}
+}
+
+@-o-keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);}
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65% {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80% {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);}
+}
+
+.swing:hover {
+    -webkit-animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation: swing 1s ease;
+    -moz-animation-iteration-count: 1;
+    -o-animation: swing 1s ease;
+    -o-animation-iteration-count: 1;
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
+
+/*------------------------------------------------------------------------------------------*
+ *-----------------------------------------RESPONSIVE---------------------------------------*
+ *------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1024px) {
+  /* landing options */
+  .landing-option-first,
+  .landing-option-second {
+    background-position: right center;
+  }
+  /* cta */
+  .landing-action {
+    font-size: 1.2rem;
+    margin: 4em 10em 4em 10em;
+  }
+  h1.landing-title.action {
+    font-size: 3em !important;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 2.5em 2em 2.5em 2em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .889em !important;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  /* landing header */
+  .landing-header-logo img {
+    height: 2.8em;
+    width: auto;
+  }
+  .landing-header-display {
+    font-size: 1.2em;
+    padding: 40px;
+    margin: 0;
+  }
+  .landing-header-link a {
+    padding-left: 1em;
+    font-size: 0.833em;
+    line-height: 2em;
+  }
+  .landing-header-link:after {
+    padding-left: .8em;
+    line-height: 2em;
+  }
+  /* cta */
+  .landing-action {
+    font-size: 1.2rem;
+    margin: 2.5em 0 2.5em 2em;
+  }
+  h1.landing-title.action {
+    font-size: 3em !important;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 2.5em 2em 2.5em 2em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .889em !important;
+  }
+  /* Modal Content/Box*/
+  .modal-okin-coupon {
+    width: 90%;
+    left:2%;
+  }
+  .modal-coupon-content {
+    margin: 2em auto;
+  }
+  h5.okin-coupon-title { 
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  /* landing header */
+  .landing-header-link a {
+    font-size: 0.702em;
+  }
+  .landing-header-display {
+    font-size: 1.125em;
+    padding: 30px;
+  }
+  /* header */
+  .landing-header-logo img {
+    height: 2em;
+    width: auto;
+  }
+  .landing-header-link a {
+    font-size: 14px;
+    padding-left: .2em;
+    line-height: 1.2em;
+  }
+  .landing-header-link:after {
+    padding-left: .2em;
+    line-height: 1.4em;
+  }
+  /* slides */
+  h1.landing-title {
+    line-height: 1.1em;
+  }
+  .landing-slide-caption {
+    top: 15%;
+    left: 8%;
+    max-width: 58%;
+  }
+  .action-list {
+    top: 40%;
+  }
+  .action-list i {
+    font-size: 3.052em;
+    border: 8px solid rgba(0,0,0,.2);
+  }
+  .action-list i:hover,
+  .action-list i:active {
+    border: 8px solid rgba(255,255,77,.5);
+    -webkit-text-stroke: 3px #FFFF4D;
+  }
+  h1.landing-title.slide2,
+  p.landing-subtitle.slide2 {
+    padding-left: 35px;
+  }
+  .landing-slide-overlay2 i {
+    font-size: 3.052em;
+    top: 46%;
+    left: 5%;
+    cursor: pointer;
+    -webkit-text-stroke: 3px #FFCE0D;
+  }
+  .landing-slide-overlay2 i:hover,
+  .landing-slide-overlay2 i:active {
+    -webkit-text-stroke: 3px #FFFF4D;
+  }
+  .landing-slide-wrapper ul li.landing-slide-overlay1,
+  .landing-slide-wrapper ul li.landing-slide-overlay2 {
+    min-height: 750px;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+  /* landing buttons */
+  .landing-button a {
+    font-size: 0.64em;
+  }
+  /* landing option */
+  .landing-option {
+    min-height: 14em; 
+  }
+  .landing-option-first,
+  .landing-option-second {
+    background-size: 150% auto;
+    background-position: right center;
+  }
+  .option {
+    padding: 2em;
+  }
+  h1.option-sub {
+    margin-bottom: .3em;
+  }
+  h6.option-sub {
+    margin-bottom: 1em;
+  }
+  p.option-sub {
+    margin-bottom: 2em;
+  }
+  /* cta */
+  .landing-action {
+    font-size: 1rem;
+    margin: 3.5em 0 3.5em 3em;
+  }
+  h1.landing-title.action {
+    font-size: 3em !important;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 3.5em 3em 3.5em 3em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .889em !important;
+  }
+  /* Modal Content/Box*/
+  .modal-okin-coupon {
+    width: 90%;
+    left:2%;
+  }
+  .modal-coupon-content {
+    margin: 2em auto;
+  }
+  h5.okin-coupon-title { 
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  /* landing option */
+  .landing-option {
+    min-height: 12em; 
+  }
+  .landing-option-first,
+  .landing-option-second {
+    background-size: 160% auto;
+    background-position: right center;
+  }
+  p.option-sub {
+    font-size: .8em;
+  }
+  /* cta */
+  .landing-action {
+    font-size: 1rem;
+    margin: 3em 0 3.5em 3em;
+  }
+  h1.landing-title.action {
+    font-size: 3em !important;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 2.5em 2em 2.5em 2em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .889em !important;
+  }
+  /* Modal Content/Box*/
+  .modal-okin-coupon {
+    width: 90%;
+    left:2%;
+  }
+  .modal-coupon-content {
+    margin: 2em auto;
+  }
+  h5.okin-coupon-title { 
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /* landing option */
+  .landing-option {
+    min-height: 12em; 
+  }
+  .landing-option-first,
+  .landing-option-second {
+    background-size: 170% auto;
+    width: 100%;
+  }
+  .option {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  /* landing header */
+  .landing-header-link a {
+    font-size: 0.702em;
+  }
+  /* slides */
+  .landing-slide-caption {
+    top: 15%;
+    left: 8%;
+    max-width: 60%;
+  }
+  .action-list {
+    top: 45%;
+  }
+  .action-list i {
+    font-size: 3.052em;
+    border: 8px solid rgba(0,0,0,.2);
+  }
+  .action-list i:hover,
+  .action-list i:active {
+    border: 8px solid rgba(255,255,77,.5);
+    -webkit-text-stroke: 3px #FFFF4D;
+  }
+  h1.landing-title.slide2,
+  p.landing-subtitle.slide2 {
+    padding-left: 35px;
+  }
+  .landing-slide-overlay2 i {
+    font-size: 3.052em;
+    top: 52%;
+    left: 3%;
+    cursor: pointer;
+    -webkit-text-stroke: 3px #FFCE0D;
+  }
+  .landing-slide-overlay2 i:hover,
+  .landing-slide-overlay2 i:active {
+    -webkit-text-stroke: 3px #FFFF4D;
+  }
+  .landing-slide-wrapper ul li.landing-slide-overlay1,
+  .landing-slide-wrapper ul li.landing-slide-overlay2 {
+    min-height: 700px;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+  /* landing buttons */
+  .landing-button a {
+    font-size: 0.64em;
+  }
+  /* landing option */
+  .landing-option {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-option-first,
+  .landing-option-second {
+    background-size: 150% auto;
+    width: 100%;
+  }
+  .option {
+    padding: 2.5em;
+  }
+  h1.option-sub {
+    margin-bottom: .6em;
+  }
+  h6.option-sub {
+    margin-bottom: 2em;
+  }
+  p.option-sub {
+    margin-bottom: 3.5em;
+  }
+  /* cta */
+  .landing-action {
+    font-size: 1rem;
+    margin: 2em 0 2.5em 2em;
+  }
+  h1.landing-title.action {
+    font-size: 2em !important;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 1.5em 1em 1.5em 1em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .889em !important;
+  }
+  /* Modal Content/Box*/
+  .modal-okin-coupon {
+    width: 90%;
+    left:2%;
+  }
+  .modal-coupon-content {
+    margin: 2em auto;
+  }
+  h5.okin-coupon-title { 
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  /* Estilos generales */
+  .left,
+  .right {
+    float: none !important;
+    text-align: center;
+  }
+  /* header */
+  .landing-header-logo {
+    text-align: center;
+  }
+  .landing-header-logo img {
+    height: 3.5em;
+    width: auto;
+  }
+  .landing-header-link a {
+    padding-left: .8em;
+  }
+  .landing-header-link:after {
+    padding-left: .8em;
+  }
+  .landing-header-display {
+    padding: 20px;
+  }
+  /* slides */
+  .landing-slide-caption {
+    font-size: .88rem;
+  }
+  h1.landing-title {
+    font-size: 1.802em;
+  }
+  h3.landing-title {
+    font-size: 1.424em;
+  }
+  h6.landing-title {
+    font-size: 1em;
+  }
+  p.landing-subtitle {
+    font-size: 0.889em;
+  }
+  .landing-slide-caption {
+    top: 10%;
+    left: 5%;
+    max-width: 60%;
+  }
+  .action-list {
+    top: 50%;
+  }
+  .action-list i {
+    font-size: 2.441em;
+    border: 5px solid rgba(0,0,0,.2);
+  }
+  .action-list i:hover,
+  .action-list i:active {
+    border: 5px solid rgba(255,255,77,.5);
+    -webkit-text-stroke: 1px #FFFF4D;
+  }
+  h1.landing-title.slide2,
+  p.landing-subtitle.slide2 {
+    padding-left: 35px;
+  }
+  .landing-slide-overlay2 i {
+    font-size: 3.052em;
+    top: 52%;
+    left: 3%;
+    cursor: pointer;
+  }
+  .landing-slide-overlay2 i:hover,
+  .landing-slide-overlay2 i:active {
+    -webkit-text-stroke: 2px #FFFF4D;
+  }
+  .landing-slide-wrapper ul li.landing-slide-overlay1,
+  .landing-slide-wrapper ul li.landing-slide-overlay2 {
+    min-height: 500px;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+  /* landing buttons */
+  .landing-button a {
+    font-size: 0.889em;
+  }
+  /* landing option */
+  .landing-option {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-option-first,
+  .landing-option-second {
+    background-size: 150% auto;
+    width: 100%;
+  }
+  .option {
+    padding: 2em;
+  }
+  h1.option-sub {
+    margin-bottom: .3em;
+  }
+  h6.option-sub {
+    margin-bottom: 1em;
+  }
+  p.option-sub {
+    margin-bottom: 2em;
+  }
+  /* Modal Content/Box */
+  .modal-okin-coupon {
+    width: 90%;
+    top: 40%;
+    left:2%;
+  }
+  .modal-coupon-content {
+    margin: 2em auto;
+  }
+  h5.okin-coupon-title { 
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 420px) {  
+  /* Estilos generales */
+  .left,
+  .right {
+    float: none !important;
+    text-align: center;
+  }
+  /* header */
+  .landing-slide-caption {
+    font-size: 1.2rem;
+  }
+  h1.landing-title {
+    font-size: .922em !important;
+  }
+  h3.landing-title {
+    font-size: .81em;
+  }
+  h6.landing-title {
+    font-size: .624em;
+  }
+  p.landing-subtitle {
+    font-size: .585em;
+  }
+  .landing-header-logo {
+    text-align: center;
+  }
+  .landing-header-logo img {
+    height: 3.5em;
+    width: auto;
+  }
+  .landing-header-link a {
+    padding-left: .8em;
+  }
+  .landing-header-link:after {
+    padding-left: .8em;
+  }
+  /* slides */
+  .landing-slide-caption {
+    top: 10%;
+    left: 5%;
+    max-width: 60%;
+  }
+  .action-list {
+    top: 50%;
+  }
+  .action-list i {
+    font-size: 2.441em;
+    border: 5px solid rgba(0,0,0,.2);
+  }
+  .action-list i:hover,
+  .action-list i:active {
+    border: 5px solid rgba(255,255,77,.5);
+    -webkit-text-stroke: 1px #FFFF4D;
+  }
+  h1.landing-title.slide2,
+  p.landing-subtitle.slide2 {
+    padding-left: 35px;
+  }
+  .landing-slide-overlay2 i {
+    font-size: 3.052em;
+    top: 52%;
+    left: 3%;
+    cursor: pointer;
+  }
+  .landing-slide-overlay2 i:hover,
+  .landing-slide-overlay2 i:active {
+    -webkit-text-stroke: 2px #FFFF4D;
+  }
+  .landing-slide-wrapper ul li.landing-slide-overlay1,
+  .landing-slide-wrapper ul li.landing-slide-overlay2 {
+    min-height: 500px;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+  /* landing buttons */
+  .landing-button a {
+    font-size: 0.523em;
+  }
+  /* landing option */
+  .landing-option {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-option-first,
+  .landing-option-second {
+    background-size: 150% auto;
+    width: 100%;
+  }
+  .option {
+    padding: 2em;
+  }
+  h1.option-sub {
+    margin-bottom: .3em;
+  }
+  h6.option-sub {
+    margin-bottom: 1em;
+  }
+  p.option-sub {
+    margin-bottom: 2em;
+  }
+  /* cta */
+  .landing-action {
+    font-size: 1.18rem;
+    margin: 2em 0 2.5em 2em;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 1.5em 1em 1.5em 1em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .585em !important;
+  }
+  .landing-action {
+    font-size: 1rem;
+    margin: 2em 0 2.5em 2em;
+  }
+  h1.landing-title.action {
+    font-size: 1.5em !important;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 1.5em 1em 1.5em 1em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .889em !important;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  /* header */
+  .landing-header-logo {
+    text-align: center;
+  }
+  .landing-header-logo img {
+    height: 3em;
+    width: auto;
+  }
+  .landing-header-link a {
+    padding-left: .4em;
+  }
+  .landing-header-link:after {
+    padding-left: .4em;
+  }
+  /* slides */
+  .landing-slide-caption {
+    font-size: 1.14rem;
+  }
+  h1.landing-title {
+    font-size: .922em !important;
+  }
+  h3.landing-title {
+    font-size: .81em;
+  }
+  h6.landing-title {
+    font-size: .624em;
+  }
+  p.landing-subtitle {
+    font-size: .585em;
+  }
+  .landing-slide-caption {
+    top: 7%;
+  }
+  .action-list {
+    top: 48%;
+  }
+  .landing-slide-overlay2 i {
+    top: 50%;
+  }
+  /* landing option */
+  .landing-option {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+  }
+  .landing-option-first,
+  .landing-option-second {
+    background-size: 150% auto;
+    width: 100%;
+  }
+  .option {
+    padding: 2em;
+  }
+  h1.option-sub {
+    margin-bottom: .922em;
+  }
+  h6.option-sub {
+    font-size: .624em;
+  }
+  p.option-sub {
+    margin-bottom: 2em;
+    font-size: .585em;
+  }
+  /* buttons */
+  .landing-button a {
+    font-size: 0.523em;
+  }
+  /* cta */
+  .landing-action {
+    font-size: 1.18rem;
+    margin: 2em 0 2.5em 2em;
+  }
+  .landing-form {
+    text-align: left;
+    padding: 1.5em 1em 1.5em 1em;
+  }
+  .club-landing-btn,
+  .landing-club-okin label {
+    font-size: .585em !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* Estilos generales */
+  .right {
+    float: none;
+    text-align: left;
+  }
+  /* header */
+  .landing-header-logo img {
+    height: 3em;
+    width: auto;
+  }
+  .landing-header-link a {
+    padding-left: .2em;
+  } 
+  .landing-header-link:after {
+    padding-left: .2em;
+  }
+  /* slides */
+  h1.landing-title {
+    font-size: .922em !important;
+  }
+  h3.landing-title {
+    font-size: .81em;
+  }
+  h6.landing-title {
+    font-size: .624em;
+  }
+  p.landing-subtitle {
+    font-size: .585em;
+  }
+  .landing-slide-caption {
+    top: 10%;
+    left: 5%;
+    max-width: 60%;
+  }
+  .action-list {
+    top: 48%;
+  }
+  .action-list i {
+    font-size: 1.602em;
+    border: 5px solid rgba(0,0,0,.2);
+  }
+  .action-list i:hover,
+  .action-list i:active {
+    border: 5px solid rgba(255,255,77,.5);
+    -webkit-text-stroke: 1px #FFFF4D;
+  }
+  h1.landing-title.slide2,
+  p.landing-subtitle.slide2 {
+    padding-left: 35px;
+  }
+  .landing-slide-overlay2 i {
+    font-size: 2.441em;
+    top: 50%;
+    left: 3%;
+    cursor: pointer;
+  }
+  .landing-slide-overlay2 i:hover,
+  .landing-slide-overlay2 i:active {
+    -webkit-text-stroke: 2px #FFFF4D;
+  }
+  .landing-slide-wrapper ul li.landing-slide-overlay1,
+  .landing-slide-wrapper ul li.landing-slide-overlay2 {
+    min-height: 500px;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+  /* cta */
+  h1.landing-title.action {
+    font-size: 1.3em !important;
+  }
+}
+
